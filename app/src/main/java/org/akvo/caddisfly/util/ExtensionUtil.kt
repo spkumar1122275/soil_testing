@@ -1,0 +1,24 @@
+package org.akvo.caddisfly.util
+
+import org.akvo.caddisfly.app.CaddisflyApp
+import java.util.*
+
+
+fun String.toLocalString(): String {
+    val value = this.lowercase(Locale.ROOT)
+        .replace(")", "")
+        .replace("(", "")
+        .replace("- ", "")
+        .replace(" ", "_")
+        .replace("_–_", "_")
+    val resourceId = CaddisflyApp.app!!.resources
+        .getIdentifier(
+            value, "string",
+            CaddisflyApp.app!!.packageName
+        )
+    return if (resourceId > 0) {
+        CaddisflyApp.app!!.getString(resourceId)
+    } else {
+        this
+    }
+}

@@ -1,0 +1,38 @@
+ffem Water and Soil
+===================
+
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)](http://www.gnu.org/licenses/gpl-3.0)
+
+ffem Water and ffem Soil apps are simple, low cost, open source, smartphone-based drinking water and soil quality testing system connected to an online data platform.
+
+
+Build with Android Studio
+-------------------------
+
+1. Clone Project
+
+2. Open project in Android Studio
+
+3. Build / Run
+
+
+Build from Command Line
+-----------------------
+
+1. Clone project and create a file named `local.properties` in the project folder with
+   the below configuration setting (ensure correct path to local sdk)
+
+    ```
+    sdk.dir=path/to/android/sdk
+    ```
+
+2. Run build command in project folder
+
+    ```
+    gradlew assembleDebug
+    ```
+
+3. Install apk to device
+
+
+

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) Stichting Akvo (Akvo Foundation)
+  ~
+  ~ This file is part of Akvo Caddisfly.
+  ~
+  ~ Akvo Caddisfly is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Akvo Caddisfly is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Akvo Caddisfly. If not, see <http://www.gnu.org/licenses/>.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.sensor.accelerometer"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.usb.host"
+        android:required="false" />
+
+    <application
+        android:name=".app.CaddisflyApp"
+        android:allowBackup="true"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.Main"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning,UnusedAttribute">
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:screenOrientation="nosensor"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.TestActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.TestListActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".preference.SettingsActivity"
+            android:parentActivityName=".ui.MainActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".ui.AboutActivity"
+            android:parentActivityName=".preference.SettingsActivity"
+            android:screenOrientation="nosensor" />
+
+        <activity
+            android:name=".sensor.chamber.ChamberTestActivity"
+            android:screenOrientation="nosensor" />
+
+        <!-- Diagnostic -->
+        <activity
+            android:name=".ui.DiagnosticInfoActivity"
+            android:parentActivityName=".preference.SettingsActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".diagnostic.DiagnosticSwatchActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name=".diagnostic.ChamberPreviewActivity"
+            android:screenOrientation="nosensor" />
+        <!-- /Diagnostic -->
+
+        <!-- Titration -->
+        <activity
+            android:name=".sensor.titration.TitrationTestActivity"
+            android:screenOrientation="nosensor" />
+        <!-- /Titration -->
+
+        <activity
+            android:name=".sensor.chamber.CalibrationGraphActivity"
+            android:screenOrientation="nosensor" />
+
+        <service
+            android:name=".updater.AlarmService"
+            android:enabled="true" />
+
+        <receiver android:name=".updater.NotificationCancelReceiver" />
+        <receiver android:name=".updater.UpdateAppReceiver" />
+        <receiver
+            android:name=".updater.BootReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+        <!--Disable Firebase advertising id-->
+        <meta-data
+            android:name="google_analytics_adid_collection_enabled"
+            android:value="false" />
+
+    </application>
+</manifest>

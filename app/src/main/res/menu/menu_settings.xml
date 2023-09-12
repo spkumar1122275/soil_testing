@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="AlwaysShowAction">
+    <item
+        android:id="@+id/disableDiagnostics"
+        android:contentDescription="@string/disable_diagnostics"
+        android:icon="@drawable/ic_revert_24dp"
+        android:onClick="onDisableDiagnostics"
+        android:title=""
+        app:showAsAction="always" />
+    <item
+        android:contentDescription="@string/settings"
+        android:enabled="false"
+        android:icon="@drawable/ic_settings_disabled_24dp"
+        android:title=""
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,57 @@
+<!--
+  ~ Copyright (C) Stichting Akvo (Akvo Foundation)
+  ~
+  ~ This file is part of Akvo Caddisfly.
+  ~
+  ~ Akvo Caddisfly is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Akvo Caddisfly is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Akvo Caddisfly. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <org.akvo.caddisfly.preference.PreferenceCategoryCustom
+        android:key="preferenceCategoryDiagnostics"
+        android:title="@string/diagnostics">
+        <CheckBoxPreference
+            android:key="@string/ignoreTimeDelaysKey"
+            android:title="@string/ignoreTimeDelays"
+            app:iconSpaceReserved="false" />
+        <EditTextPreference
+            android:defaultValue="5"
+            android:dialogMessage="A number from 1 to 5"
+            android:key="@string/samplingsTimeKey"
+            android:maxLength="2"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:title="Sampling times"
+            app:iconSpaceReserved="false" />
+        <EditTextPreference
+            android:defaultValue="50"
+            android:dialogMessage="Enter a value below 400"
+            android:key="@string/colorDistanceToleranceKey"
+            android:maxLength="3"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:title="Max swatch color distance"
+            app:iconSpaceReserved="false" />
+        <EditTextPreference
+            android:defaultValue="20"
+            android:dialogMessage="Enter a value below 400"
+            android:key="@string/colorAverageDistanceToleranceKey"
+            android:maxLength="3"
+            android:inputType="number"
+            android:selectAllOnFocus="true"
+            android:title="Max averaging color distance"
+            app:iconSpaceReserved="false" />
+    </org.akvo.caddisfly.preference.PreferenceCategoryCustom>
+</PreferenceScreen>

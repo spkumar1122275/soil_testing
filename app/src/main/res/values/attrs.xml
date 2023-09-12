@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (C) Stichting Akvo (Akvo Foundation)
+  ~
+  ~ This file is part of Akvo Caddisfly.
+  ~
+  ~ Akvo Caddisfly is free software: you can redistribute it and/or modify
+  ~ it under the terms of the GNU General Public License as published by
+  ~ the Free Software Foundation, either version 3 of the License, or
+  ~ (at your option) any later version.
+  ~
+  ~ Akvo Caddisfly is distributed in the hope that it will be useful,
+  ~ but WITHOUT ANY WARRANTY; without even the implied warranty of
+  ~ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+  ~ GNU General Public License for more details.
+  ~
+  ~ You should have received a copy of the GNU General Public License
+  ~ along with Akvo Caddisfly. If not, see <http://www.gnu.org/licenses/>.
+  -->
+
+<resources>
+    <declare-styleable name="BaseActivity">
+        <attr name="primaryButtonStyle" format="reference" />
+        <attr name="secondaryButtonStyle" format="reference" />
+        <attr name="primaryButtonColor" format="color" />
+        <attr name="fabButtonColor" format="color" />
+        <attr name="textColorPrimary" format="color" />
+        <attr name="longButtonStyle" format="reference" />
+        <attr name="longButtonText" format="color" />
+        <attr name="dialogDestructiveButton" format="reference" />
+        <attr name="primaryBackgroundStyle" format="reference" />
+        <attr name="toolbarHeight" format="dimension" />
+        <attr name="toolbarMargin" format="dimension" />
+        <attr name="progressTint" format="color" />
+        <attr name="progressTintInverse" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="TimerView">
+        <attr name="circleColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RowView">
+        <attr name="textNumber" format="string" localization="suggested" />
+        <attr name="paragraph" format="string" localization="suggested" />
+    </declare-styleable>
+
+</resources>

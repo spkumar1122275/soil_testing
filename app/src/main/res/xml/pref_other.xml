@@ -1,0 +1,16 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Preference
+        android:key="calibrate"
+        android:summary="@string/calibrate_summary"
+        android:title="@string/calibrate"
+        app:iconSpaceReserved="false" />
+    <Preference
+        android:key="emailSupport"
+        android:title="@string/email_support"
+        app:iconSpaceReserved="false" />
+    <Preference
+        android:key="about"
+        android:title="@string/about"
+        app:iconSpaceReserved="false" />
+</PreferenceScreen>

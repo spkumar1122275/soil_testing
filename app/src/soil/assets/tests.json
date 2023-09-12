@@ -1,0 +1,380 @@
+{
+  "comment": "This file contains the metadata for tests. IMPORTANT: *DO NOT* change the uuid values",
+  "tests": [
+    {
+      "name": "New Available Nitrogen",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "09dd29db-7330-4c10-bdbc-e278e073a51a",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0, 10, 20, 40, 60",
+      "monthsValid": 6,
+      "dilutions": [
+        1,
+        2,
+        5,
+        -1
+      ],
+      "results": [
+        {
+          "id": 1,
+          "name": "Available Nitrogen",
+          "unit": "mg/kg",
+          "timeDelay": 300,
+          "formula": "(%1$f * 5)"
+        }
+      ]
+    },
+    {
+      "name": "New Available Phosphorous",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "d8fdd8cb-de6a-46ee-9ff6-f046e0f2afa0",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0, 2.5, 5, 7.5, 10",
+      "monthsValid": 6,
+      "dilutions": [
+        1,
+        2,
+        5,
+        -1
+      ],
+      "results": [
+        {
+          "id": 1,
+          "name": "Available Phosphorous",
+          "unit": "mg/kg",
+          "timeDelay": 300,
+          "formula": "(%1$f * 5)"
+        }
+      ]
+    },
+    {
+      "name": "New Available Potassium",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "fc4e4e96-4f49-48a3-85fd-d0a2c7975654",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0, 10, 20, 30, 40",
+      "monthsValid": 6,
+      "dilutions": [
+        1,
+        2,
+        5,
+        -1
+      ],
+      "results": [
+        {
+          "id": 1,
+          "name": "Available Potassium",
+          "unit": "mg/kg",
+          "timeDelay": 300,
+          "formula": "(%1$f * 5)"
+        }
+      ]
+    },
+    {
+      "name": "New pH",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "a3e0e480-858a-455a-bfa4-2636348f3ef2",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "5,6,7,8,9",
+      "monthsValid": 6,
+      "results": [
+        {
+          "id": 1,
+          "name": "pH",
+          "timeDelay": 30
+        }
+      ]
+    },
+    {
+      "name": "Available Boron",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "29e609a0-0f57-4365-a4eb-4eb84c61c9ab",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0,0.25,0.5,1.0,1.5,2",
+      "monthsValid": 3,
+      "dilutions": [
+        1,
+        2,
+        5,
+        -1
+      ],
+      "results": [
+        {
+          "id": 1,
+          "name": "Available Boron",
+          "unit": "mg/kg",
+          "timeDelay": 600,
+          "formula": "(%1$f * 5)"
+        }
+      ]
+    },
+    {
+      "name": "Available Iron",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "3353f5cf-1cd2-4bf5-b47f-15d3db917add",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0,0.5,1.0,1.5,2",
+      "monthsValid": 6,
+      "dilutions": [
+        1,
+        2,
+        5,
+        -1
+      ],
+      "results": [
+        {
+          "id": 1,
+          "name": "Available Iron",
+          "unit": "mg/kg",
+          "timeDelay": 180,
+          "formula": "(%1$f * 5)"
+        }
+      ]
+    },
+    {
+      "name": "Available Nitrogen",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "8e7badf4-3c7e-4c45-9cb2-0810ffaa8c26",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0,5,10,20,30,40",
+      "monthsValid": 6,
+      "dilutions": [
+        1,
+        2,
+        5,
+        -1
+      ],
+      "results": [
+        {
+          "id": 1,
+          "name": "Available Nitrogen",
+          "unit": "mg/kg",
+          "timeDelay": 300,
+          "formula": "(%1$f * 5)"
+        }
+      ]
+    },
+    {
+      "name": "Available Phosphorous",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "ddd64497-43e0-4289-a84f-6890ff80cf20",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0,5,10,15,20,25",
+      "monthsValid": 6,
+      "dilutions": [
+        1,
+        2,
+        5,
+        -1
+      ],
+      "results": [
+        {
+          "id": 1,
+          "name": "Available Phosphorous",
+          "unit": "mg/kg",
+          "timeDelay": 300,
+          "formula": "(%1$f * 5)"
+        }
+      ]
+    },
+    {
+      "name": "Available Potassium",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "0035a4fc-6b9b-4b12-975f-3459c7fdcda3",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0,10,20,30",
+      "monthsValid": 6,
+      "dilutions": [
+        1,
+        2,
+        5,
+        -1
+      ],
+      "results": [
+        {
+          "id": 1,
+          "name": "Available Potassium",
+          "unit": "mg/kg",
+          "timeDelay": 300,
+          "formula": "(%1$f * 5)",
+          "grayScale": false
+        }
+      ]
+    },
+    {
+      "name": "pH",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "485a0c0a-0af5-40bc-baee-f5f0b03ff739",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "4,5,6,7,8,9,10",
+      "monthsValid": 6,
+      "results": [
+        {
+          "id": 1,
+          "name": "pH",
+          "timeDelay": 30
+        }
+      ]
+    },
+    {
+      "name": "Calcium and Magnesium",
+      "type": "soil",
+      "subtype": "titration",
+      "uuid": "52ec4ca0-d691-4f2b-b17a-232c2966974a",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "results": [
+        {
+          "id": 1,
+          "name": "Calcium",
+          "unit": "mg/kg",
+          "formula": "(%1$f/3) * 125",
+          "display": 2
+        },
+        {
+          "id": 2,
+          "name": "Magnesium",
+          "unit": "mg/kg",
+          "formula": "(%2$f-%1$f) * 25",
+          "display": 3
+        }
+      ]
+    },
+    {
+      "name": "Copper",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "4ae79049-8b6a-4230-b2b9-b3882ddfb68c",
+      "image": "ffem",
+      "calibrate": true,
+      "ranges": " 0,0.2,0.4,0.6,0.8,1.0",
+      "monthsValid": 12,
+      "dilutions": [
+        1,
+        2,
+        5,
+        -1
+      ],
+      "results": [
+        {
+          "id": 1,
+          "name": "Copper",
+          "unit": "mg/kg",
+          "formula": "(%1$f * 5)",
+          "timeDelay": 60
+        }
+      ]
+    },
+    {
+      "name": "Zinc",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "5eb9929f-54d1-41fe-b9f0-6c216ca0e693",
+      "image": "ffem",
+      "calibrate": true,
+      "ranges": "0.1,0.5,1,2,3,5",
+      "monthsValid": 12,
+      "dilutions": [
+        1,
+        2,
+        5,
+        -1
+      ],
+      "results": [
+        {
+          "id": 1,
+          "name": "Zinc",
+          "unit": "mg/kg",
+          "formula": "(%1$f * 5)",
+          "timeDelay": 300
+        }
+      ]
+    },
+    {
+      "name": "Organic Carbon",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "1830c0f7-b31e-4093-8b50-e804cb209ae8",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0.0, 0.5, 1.0, 1.5, 2.0",
+      "monthsValid": 6,
+      "results": [
+        {
+          "id": 1,
+          "name": "Organic Carbon",
+          "unit": "%"
+        }
+      ]
+    },
+    {
+      "name": "Available Manganese",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "420d1caf-aff8-4eb9-8062-10307285d9a3",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0,0.5,1.0,1.5,2.0",
+      "monthsValid": 6,
+      "results": [
+        {
+          "id": 1,
+          "name": "Available Manganese",
+          "unit": "mg/l",
+          "timeDelay": 600
+        }
+      ]
+    },
+    {
+      "name": "Available Sulfur",
+      "type": "soil",
+      "subtype": "cuvette",
+      "uuid": "eb9f3039-1ef9-4f53-a8e6-6c680f3878b3",
+      "image": "ffem",
+      "imageScale": "centerCrop",
+      "calibrate": true,
+      "ranges": "0,5,10,15",
+      "monthsValid": 12,
+      "results": [
+        {
+          "id": 1,
+          "name": "Available Sulfur",
+          "unit": "mg/l",
+          "formula": "(%1$f * 5)"
+        }
+      ]
+    }
+  ]
+}
